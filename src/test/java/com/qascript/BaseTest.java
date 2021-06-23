@@ -22,7 +22,7 @@ public class BaseTest {
        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("browserName",browser);
         //Set the Hub url (Docker exposed hub URL)
-        driver.set(new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), desiredCapabilities));
+        driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities));
 
     }
 
