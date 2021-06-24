@@ -10,8 +10,8 @@ public class FirstTest extends BaseTest {
     @Test
     public void LoginTest() throws MalformedURLException{
 
-        getDriver().navigate().to("http://dbankdemo.com/login");
-        Assert.assertTrue(getDriver().getTitle().equals("Digital Bank"));
+        getDriver().navigate().to("https://www.google.com/");
+        Assert.assertTrue(getDriver().getTitle().equals("Google"));
 
     }
 }

@@ -21,7 +21,6 @@
         </plugins>
     </build>
 
-
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -39,6 +38,4 @@
             <version>7.1.0</version>
         </dependency>
     </dependencies>
-
-
 </project>

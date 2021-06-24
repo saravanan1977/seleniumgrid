@@ -17,12 +17,12 @@ public class BaseTest {
     protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
 
     @BeforeMethod
-    @Parameters(value={"browser"})
+    @Parameters({"browser"})
     public void setup(String browser) throws MalformedURLException {
        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("browserName",browser);
         //Set the Hub url (Docker exposed hub URL)
-        driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities));
+        driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), desiredCapabilities));
 
     }
 
