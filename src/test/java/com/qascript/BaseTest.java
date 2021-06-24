@@ -17,7 +17,7 @@ public class BaseTest {
     protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
 
     @BeforeMethod
-    @Parameters({"browser"})
+    @Parameters(value={"browser"})
     public void setup(String browser) throws MalformedURLException {
        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("browserName",browser);
